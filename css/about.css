@@ -1,0 +1,180 @@
+
+h1{
+    background-color: rgb(240, 35, 209, 0.562);
+    text-align: center;
+}
+ul{
+list-style-type:none;
+margin-top:0;
+padding:0;
+overflow: hidden;
+background-color: black;
+}
+li{
+    float:left;
+}
+
+li a, .dropbtn{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+a:hover, .dropdown:hover .dropdtn{
+    background-color: white;
+    color: black;
+}
+
+li.dropdown{
+    display: inline-block;
+}
+
+.dropdown-content{
+    display:none;
+    position:absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:1;
+}
+.dropdown-content a{
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover{
+    color:black;
+    background-color: white;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+    
+}
+h1{
+    margin-bottom: 0;
+    margin-top: 10px;
+    padding: 15px;
+    font-size:75px;
+}
+body{
+    background-color: rgb(255, 241, 252);
+}
+
+button.enter{
+    background-color: rgb(194, 126, 154);
+
+}
+
+
+.one{
+    width: 30%;
+    margin-left: 15%;
+    margin-top: 2%;
+    font-size: 500%;
+    margin-right: 1%;
+}
+
+.two{
+    width: 30%;
+    margin-right: 15%;
+    margin-left: 1%;
+    margin-top: 2%;
+    font-size: 500%;
+}
+
+h4{
+    text-align: center;
+    font-size: 60px;
+}
+
+h3{
+    font-size: 50px;
+    text-align: center;
+}
+
+p.button{
+    text-align: center;
+    display: inline;
+}
+
+.c{
+    text-align: center;
+}
+
+img.round{
+    border-radius: 50%;
+    width: 30%;
+    display: none;
+}
+
+div.about{
+    display:none;
+    background-image: linear-gradient(rgb(240, 35, 209, 0.562),rgb(194, 126, 154));
+    padding: 2%;
+}
+
+p.info{
+    font-size: 20px;
+    margin:0;
+}
+
+div.age{
+    display:none;
+    background-image: linear-gradient(rgb(194, 126, 154),rgb(194, 126, 194));
+    padding: 2%;
+    margin-top: 2%;
+}
+
+button.age_r{
+    width:25%;
+    height: 100px;
+    margin:2px;
+    font-size: 45px;
+    float: right;
+    background-image: linear-gradient(rgb(240, 35, 209, 0.562),rgb(194, 126, 154));
+}
+
+button.age_l{
+    width:25%;
+    height: 100px;
+    margin:2px;
+    font-size: 45px;
+    float: left;
+    background-image: linear-gradient(rgb(240, 35, 209, 0.562),rgb(194, 126, 154));
+}
+
+table{
+    width:100%;
+}
+tr{
+    width: 100%;
+}
+
+td{
+    width: 50%;
+}
+
+.age_l:hover{
+    background-image: linear-gradient(rgb(194, 126, 154),rgba(240, 35, 209, 0.562));
+}
+
+.age_r:hover{
+    background-image: linear-gradient(rgb(194, 126, 154),rgba(240, 35, 209, 0.562));
+}
+
+button.b{
+     width:25%;
+    height: 100px;
+    font-size: 45px;
+    float: right;
+    background-image: linear-gradient(rgb(240, 35, 209, 0.562),rgb(194, 126, 154));
+    display: none;
+    margin: 2%;
+}
+
+.b:hover{
+    background-image: linear-gradient(rgb(194, 126, 154),rgba(240, 35, 209, 0.562));
+}

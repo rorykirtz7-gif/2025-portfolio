@@ -1,0 +1,167 @@
+h1{
+    background-color: rgb(10, 43, 94);
+    text-align: center;
+}
+ul{
+list-style-type:none;
+margin-top:0;
+padding:0;
+overflow: hidden;
+background-color: black;
+}
+li{
+    float:left;
+}
+
+li a, .dropbtn{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+a:hover, .dropdown:hover .dropdtn{
+    background-color: white;
+    color: black;
+}
+
+li.dropdown{
+    display: inline-block;
+}
+
+.dropdown-content{
+    display:none;
+    position:absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:1;
+}
+.dropdown-content a{
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover{
+    color:black;
+    background-color: white;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+    
+}
+h1{
+    margin-bottom: 0;
+    margin-top: 10px;
+    padding: 15px;
+    font-size:75px;
+}
+
+body{
+    background-color: rgb(226, 233, 240) ;
+}
+
+table{
+    width: 90%;
+    table-layout: fixed;
+
+}
+td.lines{
+    border-bottom: 1px solid black;
+    width:50%;
+
+}
+
+
+.yes :hover{
+    color: rgb(10, 43, 94) ;
+    }
+
+hr{
+    border : 1px solid black;
+    box-shadow: 1px gray;
+    width: 100%;
+    
+
+
+}
+
+h2{
+    text-align: center;
+}
+
+button.one{
+    width: 30%;
+    margin-left: 15%;
+    margin-top: 10%;
+    font-size: 500%;
+    margin-right: 1%;
+    color: rgb(189, 212, 255) ;
+      
+}
+
+button.two{
+    width: 30%;
+    margin-right: 15%;
+    margin-left: 1%;
+    margin-top: 10%;
+    font-size: 500%;
+    color: rgb(189, 212, 255) ;
+      
+}
+button.three{
+background-color: rgb(189, 212, 255) ;
+margin-left: auto;
+    padding: 45px;
+      float:right;
+      border:0;
+}
+
+button.four{
+background-color: rgb(189, 212, 255) ;
+margin-left: auto;
+    padding: 45px;
+    float: left;
+    border:0;
+
+}
+    
+p.button{
+    text-align: center;
+}
+
+div.one{
+    background-color: rgb(51, 69, 100) ;
+    padding: 1%;
+    margin-top: 0.5%;
+}
+
+div.two{
+    background-color: rgb(188, 195, 207) ;
+    padding:0.2%;
+    margin-bottom: 0;
+}
+
+div.three{
+    background-color: rgb(189, 212, 255) ;
+    margin-right:0.5%;
+    padding-top:2%;
+    padding-bottom:2%;
+}
+
+h4{
+    text-align: center;
+}
+
+img{
+    width: 100%;
+    height:auto;
+}
+
+.hover:hover{
+    background-color: rgb(238, 246, 255);
+    color: rgb(189, 212, 255) ;
+    border:0;
+}

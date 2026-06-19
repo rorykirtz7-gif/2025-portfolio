@@ -1,0 +1,125 @@
+//event liseners 
+document.getElementById("computer").addEventListener("mouseover", hover_c);
+document.getElementById("computer").addEventListener("mouseout", off_c);
+document.getElementById("paper").addEventListener("mouseover", hover_p);
+document.getElementById("paper").addEventListener("mouseout", off_p);
+
+document.getElementById("paper").addEventListener("click",clear);
+document.getElementById("computer").addEventListener("click",clear);
+document.getElementById("paper").addEventListener("click", show_papers);
+document.getElementById("computer").addEventListener("click",computer);
+
+document.getElementById("back").addEventListener("click",back);
+document.getElementById("next").addEventListener("click",next);
+
+//variables 
+let page;
+
+// on hover functions 
+function hover_c(){
+   document.getElementById("c_text").textContent = "Website";
+}
+
+function off_c(){
+   document.getElementById("c_text").textContent = "💻";
+}
+
+function hover_p(){
+   document.getElementById("p_text").textContent = "Projects";
+}
+
+function off_p(){
+   document.getElementById("p_text").textContent = "📄";
+}
+
+//clearing page
+function clear(){
+   //display none allows for the object to disaper and also not take up any space on the wesbite while gone
+   document.getElementById("buttons").style.display = "none";
+}
+
+function clear_papers(){
+document.getElementById("table").style.display = "none";
+   document.getElementById("unit_one").style.display = "none";
+   document.getElementById("title").style.display = "none";
+   document.getElementById("title_E").style.display = "none";
+   document.getElementById("title_H").style.display = "none";
+   document.getElementById("back").style.display = "none";
+   document.getElementById("next").style.display = "none";
+}
+
+function clear_computer(){
+   document.getElementById("buttons").style.display = "none";
+    document.getElementById("table_2").style.display ="none";
+   document.getElementById("unit_0").style.display = "none";
+   document.getElementById("title_L").style.display = "none";
+   document.getElementById("unit_1").style.display = "none";
+   document.getElementById("title_V").style.display = "none";
+   document.getElementById("unit_3").style.display = "none";
+   document.getElementById("title_G").style.display = "none";
+   document.getElementById("title_U").style.display = "none";
+   document.getElementById("back").style.display = "none";
+   document.getElementById("next").style.display = "none";
+}
+
+//showing pages 
+
+function show_papers(){
+   page = "one";
+   clear_computer();
+   // this causes the screen to imediatly go to the top of the page
+   window.location.hash = "unit_one";
+   document.getElementById("buttons").style.display = "none";
+   //inline and block are diffrent display settings, they chage based off the type of thing that is being shown
+   document.getElementById("table").style.display = "inline";
+   document.getElementById("unit_one").style.display = "block";
+   document.getElementById("title").style.display = "block";
+   document.getElementById("title_E").style.display = "block";
+   document.getElementById("title_H").style.display = "block";
+   document.getElementById("back").style.display = "inline";
+   document.getElementById("next").style.display = "inline";
+}
+
+function computer(){
+   page = "two"; 
+   clear_papers();
+   window.location.hash = "unit_0";
+   document.getElementById("buttons").style.display = "none";
+   document.getElementById("table_2").style.display ="inline";
+   document.getElementById("unit_0").style.display = "block";
+   document.getElementById("title_L").style.display = "block";
+   document.getElementById("unit_1").style.display = "block";
+   document.getElementById("title_V").style.display = "block";
+   document.getElementById("unit_3").style.display = "block";
+   document.getElementById("title_G").style.display = "block";
+   document.getElementById("title_U").style.display = "block";
+   document.getElementById("back").style.display = "inline";
+   document.getElementById("next").style.display = "inline";
+}
+
+// back and next buttons
+function back(){
+   if(page == "one"){
+      document.getElementById("buttons").style.display = "inline";
+   clear_papers()
+   }
+   else if(page == "two"){
+      show_papers();
+      clear_computer();
+      document.getElementById("back").style.display = "inline";
+      document.getElementById("next").style.display = "inline";
+   }
+}
+
+function next(){
+   console.log(page)
+   if(page == "one"){
+      computer();
+   }
+   else if(page == "two"){
+      console.log("hi");
+      clear_computer();
+      document.getElementById("buttons").style.display = "inline";
+
+   }
+}

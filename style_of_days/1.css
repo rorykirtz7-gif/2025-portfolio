@@ -1,0 +1,91 @@
+ul{
+list-style-type:none;
+margin-top:0;
+padding:0;
+overflow: hidden;
+background-color: black;
+}
+li{
+    float:left;
+}
+
+li a, .dropbtn{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+a:hover, .dropdown:hover .dropdtn{
+    background-color: white;
+    color: black;
+}
+
+li.dropdown{
+    display: inline-block;
+}
+
+.dropdown-content{
+    display:none;
+    position:absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:1;
+}
+.dropdown-content a{
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover{
+    color:black;
+    background-color: white;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+    
+}
+h1{
+    margin-bottom: 0;
+    margin-top: 10px;
+    padding: 15px;
+    font-size:75px;
+    background-color: rgb(238, 81, 81);
+    text-align: center;
+}
+
+div.one{
+    background-color: rgb(255, 148, 148);
+    padding: auto;
+    margin: 1.5%;
+}
+
+h2{
+    font-size: 30px;
+    text-align: center;
+}
+p.one{
+    font-size: 20px;
+    text-align: center;
+}
+
+p.two{
+    font-size: 20px;
+}
+
+footer{
+    margin-bottom: 0;
+    text-align: center;
+    padding-bottom: 0;
+    background-color: rgb(238, 81, 81) ;
+}
+body{
+    background-color:rgba(253, 211, 211, 0.932) ;
+}
+
+a.two{
+    color: rgb(238, 81, 81);
+}

@@ -1,0 +1,40 @@
+body{
+    background-color:rgb(215, 250, 232);
+}
+div{
+    text-align: left;
+    background-color: rgb(125, 209, 189);
+    padding: 15px;
+    margin: 5%;
+    margin-bottom: 0;
+}
+
+p.one{
+    font-size: 25px;
+}
+.two{
+    font-size: 20px;
+}
+
+a.no :hover{
+color: rgb(125, 209, 189) ;
+}
+a.three{
+    text-decoration: none;
+    color: black;
+    display:block;    background-color: rgb(125, 209, 189);
+    color:black;
+    padding: 35px;
+    margin-left: 5%;
+    margin-top: 1%;
+    font-size: 15px;
+    width:2%;
+}
+
+a.yes:hover{
+    background-color:rgb(106, 179, 162);
+}
+
+.button:hover{
+    color:rgb(10, 43, 94);
+}
